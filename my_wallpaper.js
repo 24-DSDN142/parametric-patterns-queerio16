@@ -1,5 +1,5 @@
 //your parameter variables go here!
-let triangle_height  = 160;
+let triangle_height  = 100;
 let rect_height = 20;
 
 
@@ -20,9 +20,10 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   noFill()
-  triangle (150, 100, 60, 300, 150, 300)
-  triangle (150, 90, 260, 300, 150, 300)
-  line (150, 100, 150, 320)
+  triangle (150, triangle_height, 60, 300, 150, 305)
+  triangle (150, triangle_height, 260, 300, 150, 300)
+  line (150, 300, 260, 300)
+  line (150, 300, 150, 320)
   line (70,320,230,320)
   line (230,320,215,340)
   line (215,340,90,340)
