@@ -23,5 +23,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   triangle (150, 100, 60, 300, 150, 300)
   triangle (150, 90, 260, 300, 150, 300)
   line (150, 100, 150, 320)
-
+  line (70,320,230,320)
+  line (230,320,215,340)
+  line (215,340,90,340)
+  line (90,340,70,320)
 }
