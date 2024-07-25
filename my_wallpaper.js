@@ -9,23 +9,32 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 300;
-  pWallpaper.grid_settings.cell_height = 400;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
 
 function wallpaper_background() {
-  background(48, 120, 138); //light honeydew green colour
+  background(144, 224, 240); //light honeydew green colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  noFill()
-  triangle (150, triangle_height, 60, 300, 150, 305)
-  triangle (150, triangle_height, 260, 300, 150, 300)
-  line (150, 300, 260, 300)
-  line (150, 300, 150, 320)
-  line (70,320,230,320)
-  line (230,320,215,340)
-  line (215,340,90,340)
-  line (90,340,70,320)
+  stroke(78, 153, 77)
+  fill(78, 153, 77)
+  circle(30,139,17) //flippper left 
+  circle(70,139,17) //flipper right
+  ellipse(50,100,60,100) //body
+  noStroke() //remove top half of ellipse
+  fill(144, 224, 240)
+  rect(15,35,70,65)
+  fill(78, 153, 77) 
+  stroke(78, 153, 77)
+  circle(50,100,60) //body
+  circle(50,65,25) //head
+  triangle(37,145,63,145,50,160) //tail
+  
+  //arms :D
+  line(70,85,95,80)
+  line(70,95,95,95)
+ 
 }
