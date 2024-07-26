@@ -19,6 +19,7 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+  /*  attempt 1 turtle. Not working
   stroke(78, 153, 77)
   fill(78, 153, 77)
   circle(30,139,17) //flippper left 
@@ -35,6 +36,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   
   //arms :D
   line(70,85,95,80)
-  line(70,95,95,95)
+  line(70,95,95,95)*/
  
+
 }
