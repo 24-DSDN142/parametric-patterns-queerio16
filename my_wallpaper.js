@@ -66,11 +66,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(35,54,20,20,80,20,65,54)
   bezier(50,150,-10,85,25,50,50,50)
   bezier(50,150,110,85,75,50,50,50)
-  bezier()
-  line(0,75,200,75)
-  line(0,130,200,130)
-  bezier()
-
+  //line(0,75,200,75)
+  bezier(71,122,87,128,77,152,60,138)
+  //line(0,122,200,122)
+  //line(0,138,200,138)
+  //line(29,0,29,200)
+  //line(40,0,40,200)
+  bezier(29,122,13,128,23,152,40,138)
+  //line(0,143,200,143)
 
 
 }
