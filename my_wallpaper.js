@@ -38,14 +38,39 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   line(70,85,95,80)
   line(70,95,95,95)*/
   
-  beginShape();
+  /*beginShape();
   vertex(0,-100);
   bezierVertex(0,-50,50,0,100,0);
   bezierVertex(50,0,0,50,0,100);
   bezierVertex(0,50,-50,0,-100,0)
   bezierVertex(-50,0,0,-50,0,-100);
-  endShape();
+  endShape();*/
 
-  bezier(100,150,50,50,250,50,200,150);
+  //grid
+  stroke(200)
+  line (50,0,50,200)
+  line (100,0,100,200)
+  line (150,0,150,200)
+  line (0,50,200,50)
+  line (0,100,200,100)
+  line (0,150,200,150)
+  stroke(0)
+
+  //p5.js example
+  //bezier(100,150,50,50,250,50,200,150);
+  // bezier(start point x,y ; control points to define curve ; end point x,y;)
+  // beziers can have as many control points as you want
+
+
+  //turtle attempt 2 :)
+  bezier(35,54,20,20,80,20,65,54)
+  bezier(50,150,-10,85,25,50,50,50)
+  bezier(50,150,110,85,75,50,50,50)
+  bezier()
+  line(0,75,200,75)
+  line(0,130,200,130)
+  bezier()
+
+
 
 }
