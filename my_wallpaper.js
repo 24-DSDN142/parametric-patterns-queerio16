@@ -19,25 +19,6 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  /*  attempt 1 turtle. Not working
-  stroke(78, 153, 77)
-  fill(78, 153, 77)
-  circle(30,139,17) //flippper left 
-  circle(70,139,17) //flipper right
-  ellipse(50,100,60,100) //body
-  noStroke() //remove top half of ellipse
-  fill(144, 224, 240)
-  rect(15,35,70,65)
-  fill(78, 153, 77) 
-  stroke(78, 153, 77)
-  circle(50,100,60) //body
-  circle(50,65,25) //head
-  triangle(37,145,63,145,50,160) //tail
-  
-  //arms :D
-  line(70,85,95,80)
-  line(70,95,95,95)*/
-  
   /*beginShape();
   vertex(0,-100);
   bezierVertex(0,-50,50,0,100,0);
@@ -63,17 +44,21 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 
   //turtle attempt 2 :)
-  bezier(35,54,20,20,80,20,65,54)
-  bezier(50,150,-10,85,25,50,50,50)
-  bezier(50,150,110,85,75,50,50,50)
+  bezier(35,54,20,20,80,20,65,54) //head
+  bezier(50,150,-10,85,25,50,50,50) //body left
+  bezier(50,150,110,85,75,50,50,50) //body right
   //line(0,75,200,75)
-  bezier(71,122,87,128,77,152,60,138)
+  bezier(71,122,87,128,77,152,60,138) //flipper left
   //line(0,122,200,122)
   //line(0,138,200,138)
   //line(29,0,29,200)
   //line(40,0,40,200)
-  bezier(29,122,13,128,23,152,40,138)
+  bezier(29,122,13,128,23,152,40,138) //flipper right
   //line(0,143,200,143)
+ // line(0,75,200,75)
 
-
+  //flipped turtle
+  //bezier(150,150,90,85,125,150,150,50)
+  bezier(150,50,90,115,125,150,150,150)
+  bezier(150,50,210,115,175,150,150,150)
 }
