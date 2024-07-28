@@ -4,13 +4,13 @@ let rect_height = 20;
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
-  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.cell_height = 250;
   pWallpaper.grid_settings.row_offset  = 0;
 }
 
@@ -28,14 +28,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   endShape();*/
 
   //grid
-  stroke(200)
+  /*stroke(200)
   line (50,0,50,200)
   line (100,0,100,200)
   line (150,0,150,200)
   line (0,50,200,50)
   line (0,100,200,100)
   line (0,150,200,150)
-  stroke(0)
+  stroke(0)*/
 
   //p5.js example
   //bezier(100,150,50,50,250,50,200,150);
@@ -45,8 +45,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   //turtle attempt 2 :)
   bezier(35,54,20,20,80,20,65,54) //head
-  bezier(50,150,-10,85,25,50,50,50) //body left
-  bezier(50,150,110,85,75,50,50,50) //body right
+  bezier(50,150,-10,85,25,50,50,50) //left body left
+  bezier(50,150,110,85,75,50,50,50) //left body right
   //line(0,75,200,75)
   bezier(71,122,87,128,77,152,60,138) //flipper left
   //line(0,122,200,122)
@@ -58,7 +58,16 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  // line(0,75,200,75)
 
   //flipped turtle
-  //bezier(150,150,90,85,125,150,150,50)
-  bezier(150,50,90,115,125,150,150,150)
-  bezier(150,50,210,115,175,150,150,150)
+  //bezier(35,54,20,20,80,20,65,54) //head
+  bezier(135,146,120,180,180,180,165,146)
+  bezier(150,50,90,115,125,150,150,150) //right body left
+  bezier(150,50,210,115,175,150,150,150) //right body right
+ 
+  //line(0,62,200,62)
+  //line(0,78,200,78)
+  bezier(129,78,113,72,123,48,140,62)
+  bezier(171,78,187,72,177,48,160,62)
+
+
+  
 }
