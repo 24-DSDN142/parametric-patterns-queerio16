@@ -6,11 +6,11 @@ let rect_height = 20;
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
-  pWallpaper.grid_settings.cell_height = 400;
+  pWallpaper.grid_settings.cell_height = 300;  // so much less work to have it at 300 instead of 400. few
   pWallpaper.grid_settings.row_offset  = 0;
 }
 
@@ -85,7 +85,17 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(129,278,113,272,123,248,140,262)
   bezier(171,278,187,272,177,248,160,262)
 
-  // a third time!
+  // the original turtle offest now!!
+  bezier(35,204,20,170,80,170,65,204) //head
+  bezier(50,300,-10,235,25,200,50,200) //left body left
+  bezier(50,300,110,235,75,200,50,200) //left body right
+  bezier(71,272,87,278,77,302,60,288) //flipper left
+  bezier(29,272,13,278,23,302,40,288) //flipper right
 
+  bezier(35,54,20,20,80,20,65,54) //head
+  bezier(50,150,-10,85,25,50,50,50) //left body left
+  bezier(50,150,110,85,75,50,50,50) //left body right
+  bezier(71,122,87,128,77,152,60,138) //flipper left
+  bezier(29,122,13,128,23,152,40,138) //flipper right
 
 }
