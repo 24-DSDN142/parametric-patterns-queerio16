@@ -15,7 +15,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(144, 224, 240); //light honeydew green colour
+  background(252, 247, 220); //light honeydew green colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -37,6 +37,15 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //arms :D
   line(70,85,95,80)
   line(70,95,95,95)*/
- 
+  
+  beginShape();
+  vertex(0,-100);
+  bezierVertex(0,-50,50,0,100,0);
+  bezierVertex(50,0,0,50,0,100);
+  bezierVertex(0,50,-50,0,-100,0)
+  bezierVertex(-50,0,0,-50,0,-100);
+  endShape();
+
+  bezier(100,150,50,50,250,50,200,150);
 
 }
