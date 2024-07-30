@@ -1,11 +1,18 @@
 //your parameter variables go here!
 let shift_right = (25); // could use a maths var?
 let flip_size = (100);
+let shell_colour = (80, 141, 78)
 
 // shell shape/line variable
 // colour
 // flipper size
 //  eyes
+
+/* palette  https://colorhunt.co/palette/d6efd880af81508d4e1a5319
+rgb(214, 239, 216)
+rgb(128, 175, 129)
+rgb(80, 141, 78)
+rgb(26, 83, 25) */
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -19,7 +26,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(252, 247, 220); //light honeydew green colour
+  background(187, 233, 255); //light honeydew green colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -30,7 +37,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   noStroke()
 
   bezier(35,54,20,20,80,20,65,54) //head
-  fill(28, 128, 0)
+  fill(80, 141, 78)
   bezier(50,150,-10,85,25,50,50,50) //left body left
   bezier(50,150,110,85,75,50,50,50) //left body right
   fill(79, 121, 66)
@@ -48,7 +55,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   
   //flipped turtle offset 
   bezier(135,196,120,230,180,230,165,196)
-  fill(28, 128, 0)
+  fill(80, 141, 78)
   bezier(150,100,90,165,125,200,150,200)
   bezier(150,100,210,165,175,200,150,200)
   fill(79, 121, 66)
@@ -57,7 +64,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   // agian!
   bezier(135,346,120,380,180,380,165,346)
-  fill(28, 128, 0)
+  fill(80, 141, 78)
   bezier(150,250,90,315,125,350,150,350)
   bezier(150,250,210,315,175,350,150,350)
   fill(79, 121, 66)
@@ -66,7 +73,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   // the original turtle offest now!!
   bezier(35,204,20,170,80,170,65,204) //head
-  fill(28, 128, 0)
+  fill(80, 141, 78)
   bezier(50,300,-10,235,25,200,50,200) //left body left
   bezier(50,300,110,235,75,200,50,200) //left body right
   fill(79, 121, 66)
