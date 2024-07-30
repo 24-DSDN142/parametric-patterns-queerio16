@@ -1,8 +1,11 @@
 //your parameter variables go here!
-let triangle_height  = 100;
-let rect_height = 20;
-let shift_right = (+50)
+let shift_right = (25); // could use a maths var?
+let flip_size = (100);
 
+// shell shape/line variable
+// colour
+// flipper size
+//  eyes
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -49,8 +52,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(150,100,90,165,125,200,150,200)
   bezier(150,100,210,165,175,200,150,200)
   fill(79, 121, 66)
-  bezier(129,128,113,122,123,98,140,112)
-  bezier(171,128,187,122,177,98,160,112)
+  bezier(129,128,113-(shift_right),122,123,98,140,112)
+  bezier(171,128,187+(shift_right),122,177,98,160,112)
 
   // agian!
   bezier(135,346,120,380,180,380,165,346)
@@ -67,16 +70,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(50,300,-10,235,25,200,50,200) //left body left
   bezier(50,300,110,235,75,200,50,200) //left body right
   fill(79, 121, 66)
-  bezier(71,272,87,278,77,302,60,288) //flipper left
-  bezier(29,272,13,278,23,302,40,288) //flipper right
-
-  bezier(35, 54, 20, 20,80, 20,65, 54) //head
-  fill(28, 128, 0)
-  bezier(50,150,-10, 85,25, 50,50, 50) //left body left
-  bezier(50,150,110, 85,75, 50,50, 50) //left body right
-  fill(79, 121, 66)
-  bezier(71,122, 87,128,77,152,60,138) //flipper left
-  bezier(29,122, 13,128,23,152,40,138) //flipper right
+  bezier(71,272,87+(shift_right),278,77,302,60,288) //flipper left
+  bezier(29,272,13-(shift_right),278,23,302,40,288) //flipper right
 
 
 }
