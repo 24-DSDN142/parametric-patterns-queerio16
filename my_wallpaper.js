@@ -71,20 +71,19 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(129,278,113,272,123,248,140,262)
   bezier(171,278,187,272,177,248,160,262)
 
-  // the original turtle offest now!!
+  // upright bottom turtle
   bezier(35,204,20,170,80,170,65,204) //head
   fill(80, 141, 78)
   bezier(50,300,-10,235,25,200,50,200) //left body left
   bezier(50,300,110,235,75,200,50,200) //left body right
   fill(79, 121, 66)
-  bezier(71,272,87+(shift_right),278,77,302,60,288) //flipper left
-  bezier(29,272,13-(shift_right),278,23,302,40,288) //flipper right
+  bezier(71,272,87+(shift_right),278,77,302,60,288) //flipper right
+  bezier(29,272,13-(shift_right),278,23,302,40,288) //flipper left
 
   // arms!!!!!!!
-  fill(0)
-  line(100,0,100,300)
-  line(0,100,300,100)
-  line(29,0,29,300)
-  line(0,0,200,300)
-  line(30, 20, 85, 75)
+  bezier(18,230,5,226,-5,204,27,210)
+
+  bezier(71,122,87,128,77,152,60,138)
+  bezier(18,60,87,66,77,92,60,78)
+
 }
