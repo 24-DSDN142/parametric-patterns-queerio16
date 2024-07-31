@@ -80,5 +80,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(71,272,87+(shift_right),278,77,302,60,288) //flipper left
   bezier(29,272,13-(shift_right),278,23,302,40,288) //flipper right
 
-
+  // arms!!!!!!!
+  fill(0)
+  line(100,0,100,300)
+  line(0,100,300,100)
+  line(29,0,29,300)
+  line(0,0,200,300)
+  line(30, 20, 85, 75)
 }
