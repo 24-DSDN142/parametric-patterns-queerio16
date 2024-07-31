@@ -41,8 +41,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(50,150,-10,85,25,50,50,50) //left body left
   bezier(50,150,110,85,75,50,50,50) //left body right
   fill(79, 121, 66)
-  bezier(71,122,87,128,77,152,60,138) //flipper left
-  bezier(29,122,13,128,23,152,40,138) //flipper right
+  bezier(71,122,87,128,77,152,60,138) //flipper right
+  bezier(29,122,13,128,23,152,40,138) //flipper left
   
   //flipped turtle
   //bezier(35,54,20,20,80,20,65,54) //head
@@ -82,8 +82,15 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   // arms!!!!!!!
   bezier(18,230,5,226,-5,204,27,210)
+  bezier(28,59,5,52,-5,70,18,78)
 
-  bezier(71,122,87,128,77,152,60,138)
-  bezier(18,60,87,66,77,92,60,78)
+  bezier(71,59,94,52,104,70,81,78)
+  bezier(82,230,94,226,104,204,71,210)
 
+  //bezier(29,272,13,278,23,302,40,288) 
+//upright bottom flipper left reference
+  //bezier(29,122,13,128,23,152,40,138)
+//top left turtle flipper left
+  //bezier(129-10,122+50,113-23,128+50,123-23,152+50,140-13,138+50)
+  
 }
