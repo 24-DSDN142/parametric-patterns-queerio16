@@ -1,8 +1,8 @@
 //your parameter variables go here!
 let shell_colour;
 let shift_right = (35); // could use a maths var?
-let flip_size = (35);
-let eye = (5);
+let flip_size = (25);
+let eye = (6);
 
 
 
@@ -26,7 +26,8 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 300;  // so much less work to have it at 300 instead of 400. few
   pWallpaper.grid_settings.row_offset  = 0;
-  shell_colour = color(80,141,78);
+  
+  shell_colour = color(26, 83, 25);
 }
 
 function wallpaper_background() {
@@ -107,6 +108,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   circle(59,38+150,eye,eye)
   circle(41+100,38+24,eye,eye)
   circle(59+100,38+24,eye,eye)
-
+  circle(41+100,38+24+150,eye,eye)
+  circle(59+100,38+24+150,eye,eye)
 
 }
