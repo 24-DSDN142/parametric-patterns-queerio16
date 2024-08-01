@@ -1,15 +1,12 @@
 //your parameter variables go here!
 let shell_colour;
 let shift_right = (35); // could use a maths var?
-let flip_size = (25);
+let flip_size = (35);
 let eye = (6);
 
 
 
 // shell shape/line variable
-// colour
-// flipper size
-//  eyes
 
 /* palette  https://colorhunt.co/palette/d6efd880af81508d4e1a5319
 rgb(214, 239, 216)
@@ -27,7 +24,7 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_height = 300;  // so much less work to have it at 300 instead of 400. few
   pWallpaper.grid_settings.row_offset  = 0;
   
-  shell_colour = color(26, 83, 25);
+  shell_colour = color(80, 141, 78);
 }
 
 function wallpaper_background() {
@@ -50,15 +47,6 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   fill(79, 121, 66)
   bezier(71,122,87,128,77,152,60,138) //flipper right
   bezier(29,122,13,128,23,152,40,138) //flipper left
-  
-  //flipped turtle
-  //bezier(35,54,20,20,80,20,65,54) //head
- /* bezier(135,146,120,180,180,180,165,146)
-  bezier(150,50,90,115,125,150,150,150) //right body left
-  bezier(150,50,210,115,175,150,150,150) //right body right
-  bezier(129,78,113,72,123,48,140,62) //right flipper left
-  bezier(171,78,187,72,177,48,160,62) //right fliper right
-*/
   
   //flipped turtle offset 
   bezier(135,196,120,230,180,230,165,196)
@@ -110,5 +98,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   circle(59+100,38+24,eye,eye)
   circle(41+100,38+24+150,eye,eye)
   circle(59+100,38+24+150,eye,eye)
+
+  //push()
+ /* fill(255)
+  push()
+  scale(0.75,0.75)
+  bezier(50,300,-10,235,25,200,50,200) //left body left
+  bezier(50,300,110,235,75,200,50,200) //left body right
+  pop() */
+
 
 }
