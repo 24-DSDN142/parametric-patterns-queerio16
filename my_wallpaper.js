@@ -107,5 +107,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(50,300,110,235,75,200,50,200) //left body right
   pop() */
 
+  bezier(50,300-10,-10+10,235-10,25+10,200+7,50,200+7) //left body left
+  bezier(50,300-10,110-10,235-10,75-10,200+7,50,200+7) //left body right
+
+  //bezier(50,275,-10,210,10,200,50,175)
+
 
 }
