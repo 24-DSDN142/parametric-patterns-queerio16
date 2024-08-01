@@ -99,18 +99,17 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   circle(41+100,38+24+150,eye,eye)
   circle(59+100,38+24+150,eye,eye)
 
-  //push()
- /* fill(255)
-  push()
-  scale(0.75,0.75)
-  bezier(50,300,-10,235,25,200,50,200) //left body left
-  bezier(50,300,110,235,75,200,50,200) //left body right
-  pop() */
 
+  //bottom left turtle inner shell
   bezier(50,300-10,-10+10,235-10,25+10,200+7,50,200+7) //left body left
   bezier(50,300-10,110-10,235-10,75-10,200+7,50,200+7) //left body right
 
-  //bezier(50,275,-10,210,10,200,50,175)
+  //top left turtle inner shell
+  bezier(50,300-10-150,-10+10,235-10-150,25+10,200+7-150,50,200+7-150) //left body left
+  bezier(50,300-10-150,110-10,235-10-150,75-10,200+7-150,50,200+7-150) //left body right
+
+  
+
 
 
 }
