@@ -1,8 +1,10 @@
 //your parameter variables go here!
 let shell_colour;
+let inner_shell_colour;
 let shift_right = (35); // could use a maths var?
 let flip_size = (35);
 let eye = (6);
+
 
 
 
@@ -25,6 +27,7 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.row_offset  = 0;
   
   shell_colour = color(80, 141, 78);
+  inner_shell_colour = color(26, 83, 25);
 }
 
 function wallpaper_background() {
@@ -99,7 +102,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   circle(41+100,38+24+150,eye,eye)
   circle(59+100,38+24+150,eye,eye)
 
-
+  
+  fill(inner_shell_colour)
   //bottom left turtle inner shell
   bezier(50,300-10,-10+10,235-10,25+10,200+7,50,200+7) //left body left
   bezier(50,300-10,110-10,235-10,75-10,200+7,50,200+7) //left body right
@@ -108,8 +112,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   bezier(50,300-10-150,-10+10,235-10-150,25+10,200+7-150,50,200+7-150) //left body left
   bezier(50,300-10-150,110-10,235-10-150,75-10,200+7-150,50,200+7-150) //left body right
 
-  
+  //top right turtle inner shell
+  bezier(150,100+10, 90+10,165+10,125+10,200-7,150,200-7)
+  bezier(150,100+10,210-10,165+10,175-10,200-7,150,200-7)
 
-
-
+  //bottom right turtle inner shell
+  bezier(150,100+10+150, 90+10,165+10+150,125+10,200-7+150,150,200-7+150)
+  bezier(150,100+10+150,210-10,165+10+150,175-10,200-7+150,150,200-7+150)
 }
